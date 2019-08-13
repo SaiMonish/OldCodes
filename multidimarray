@@ -1,0 +1,38 @@
+<?php
+persons[0] = [
+				'name' => 'Jack', 
+				'age' => '7', 
+				'email' => 'jack@jack.com', 
+			];
+persons[1] = [
+				'name' => 'jarvis', 
+				'age' => '4', 
+				'email' => 'jar@jar.com', 
+			];
+
+echo $persons[0]['name'];  ==>output as Jack
+
+
+for($i=0; $i<count($persons); $i++)
+{
+	echo 'Name: ' $person[$i]['name'] .'<br>';
+	echo 'Age: ' $person[$i]['age'] .'<br>';
+	echo 'Email: ' $person[$i]['email'] .'<br>';
+}
+
+for($i=0; $i<count($persons); $i++)
+{
+	echo 'Name: ' $person[$i][0] .'<br>';
+	echo 'Age: ' $person[$i][1] .'<br>';
+	echo 'Email: ' $person[$i][2] .'<br>';
+}
+
+
+for($i=0; $i<count($persons); $i++)
+{
+	for($j=0; $j<count($persons[$i]); $j++)
+	{
+		echo $persions[$i][$j];
+	}
+}
+?>
